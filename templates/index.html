@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Comparison Tool</title>
+    <style>
+        body {
+            font-family: Arial;
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+
+        button {
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Excel Comparison Tool</h2>
+
+<form action="/compare" method="post" enctype="multipart/form-data">
+
+    <label>File 1</label>
+    <input type="file" name="file1" required>
+
+    <label>File 2</label>
+    <input type="file" name="file2" required>
+
+    <label>Output File Name</label>
+    <input type="text"
+           name="output"
+           value="Excel_Comparison_Report.xlsx">
+
+    <button type="submit">
+        Compare Files
+    </button>
+
+</form>
+
+</body>
+</html>
